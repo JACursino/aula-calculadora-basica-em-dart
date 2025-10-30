@@ -7,20 +7,23 @@ void main() {
   double numeroDois = double.parse(stdin.readLineSync()!);
 
   void soma() {
-    print("Nosso resultado da nossa soma é: ${numeroUm + numeroDois}");
+    print("O resultado da nossa soma é: ${numeroUm + numeroDois}");
   }
 
   void subtracao() {
-    print("Nosso resultado da nossa subtração é: ${numeroUm - numeroDois}");
+    print("O resultado da nossa subtração é: ${numeroUm - numeroDois}");
   }
 
   void divisao() {
-    print("Nosso resultado da nossa divisão é: ${numeroUm / numeroDois}");
+    print("O resultado da nossa divisão é: ${numeroUm / numeroDois}");
   }
 
   void multiplicacao() {
-    print("Nosso resultado da nossa multiplicação é: ${numeroUm * numeroDois}");
+    print("O resultado da nossa multiplicação é: ${numeroUm * numeroDois}");
   }
 
-  subtracao();
+  multiplicacao();
 }
+
+
+
