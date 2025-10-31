@@ -29,8 +29,8 @@ void main() {
     print("O resultado da nossa multiplicação é: ${numeroUm * numeroDois}");
   }
 
+//Otimização da condição if/else da nossa calculadora para a escolha da operação
   if (operacao == "+") {
-    //Se a operação for igual a "+"
     soma(); //Chama a função
   } else {
     if (operacao == "-") {
@@ -45,5 +45,6 @@ void main() {
       }
     }
   }
+
   print('***FIM***');
 }
