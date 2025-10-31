@@ -1,16 +1,18 @@
 import 'dart:io';
 
 void main() {
-  print("Vamos fazer uma operação entre dois valores numéricos:");
-  //função double faz a conversão de String para número decimal
-  double numeroUm = double.parse(stdin.readLineSync()!);
-  double numeroDois = double.parse(stdin.readLineSync()!);
+  print('***CALCULADORA BÁSICA EM DART***');
+  print("Faça a escolha de dois números e logo em seguida escolha a operação:");
 
-  void soma() {
+  double numeroUm = double.parse(stdin.readLineSync()!);//função double faz a conversão de String para número decimal
+  double numeroDois = double.parse(stdin.readLineSync()!);
+  String operacao = stdin.readLineSync()!; //Tratamento de String -nesse caso sinais de operação
+
+  void soma() { //Crie a função soma
     print("O resultado da nossa soma é: ${numeroUm + numeroDois}");
   }
 
-  void subtracao() {
+  void subtracao() { // Crie a função subtracao
     print("O resultado da nossa subtração é: ${numeroUm - numeroDois}");
   }
 
@@ -22,8 +24,19 @@ void main() {
     print("O resultado da nossa multiplicação é: ${numeroUm * numeroDois}");
   }
 
-  multiplicacao();
+  if (operacao == "+") { //Se a operação for igual a "+"
+    soma(); //Chama a função
+  }
+
+  if (operacao == "-") {
+    subtracao();
+  }
+
+  if (operacao == "*") {
+    multiplicacao();
+  }
+
+  if (operacao == "/") {
+    divisao();
+  }
 }
-
-
-
