@@ -29,22 +29,20 @@ void main() {
     print("O resultado da nossa multiplicação é: ${numeroUm * numeroDois}");
   }
 
-//Otimização da condição if/else da nossa calculadora para a escolha da operação
-  if (operacao == "+") {
-    soma(); //Chama a função
-  } else {
-    if (operacao == "-") {
+  //Otimização da condição switch da nossa calculadora para a escolha da operação
+  switch (operacao) {
+    case "+":
+      soma();
+      break;
+    case "-":
       subtracao();
-    } else {
-      if (operacao == "*") {
-        multiplicacao();
-      } else {
-        if (operacao == "/") {
-          divisao();
-        }
-      }
-    }
+      break;
+    case "*":
+      multiplicacao();
+      break;
+    case "/":
+      divisao();
+      break;
   }
-
   print('***FIM***');
 }
